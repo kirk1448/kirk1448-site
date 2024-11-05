@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>kirk1448's lending</title>
+        <style>
+            @keyframes slide-in-up {
+                from {
+                    transform: translateY(100%);
+                    opacity: 0%;
+                }
+
+                to {
+                    transform: translateY(0%);
+                    opacity: 100%;
+                }
+            }
+            @keyframes slide-in-left {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0%;
+                }
+
+                to {
+                    transform: translateX(0%);
+                    opacity: 100%;
+                }
+            }
+
+            @media only screen and (max-width: 1200px) {
+                #no-mobile {
+                    display: none;
+                }
+            }
+
+            @font-face {
+                font-family: Akony;
+                src: url(https://media.uprock.school/fonts/Akony/AKONY.otf);
+            }
+            @font-face {
+                font-family: Gotham Pro;
+                src: url(/fonts/GothamPro.ttf);
+            }
+            .container {
+                float: right;
+            }
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            .object {
+                margin-left: 64px;
+                margin-left: 64px;
+                margin-bottom: 64px;
+                margin-top: 64px;
+            }
+            h1 {
+                font-family:'Akony';
+                font-size: 96pt;
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+            h2 {
+                font-family:'Akony';
+                font-size: 53pt;
+                margin-block-start: 0;
+                margin-block-end: 0;
+                text-align: right;
+
+                animation: 2s alternate slide-in-left;
+            }
+            h3 {
+                font-family: 'Gotham Pro';
+                font-size: 36pt;
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+            .image {
+                width: 760px;
+                height: 764px;
+                border-top-left-radius: 64px;
+                border-top-right-radius: 64px;
+                
+                animation: 2s alternate slide-in-up;
+            }
+            .icons {
+                width: 452px;
+                height: 452px;
+                margin-top: 68px;
+                margin-left: 34px;
+                margin-right: 34px;
+                
+                animation: 2s alternate slide-in-up;
+            }
+            .rectangle {
+                width: 520px;
+                height: 543px;
+                border: 6px solid black;
+                border-top-left-radius: 64px;
+                border-top-right-radius: 64px;
+                border-bottom-color: white;
+                float: right;
+                position: relative;
+                margin-right: 64px;
+                margin-bottom: 64px;
+
+                animation: 2s alternate slide-in-left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="object">
+            <div></div>
+            <h1>kirk1448</h1>
+            <h3 style="margin-bottom: 17; margin-top: -20;">designer / programer / musician</h3>
+            <div class="container">
+                <div>
+                    <h2 style=" margin-right: 64px;">PYTHON</h2>
+                    <h2 style=" margin-right: 64px;">.NET</h2>
+                    <h2 style=" margin-right: 64px;">JAVA</h2>
+                    <h2 style=" margin-right: 64px;">CPP</h2>
+                </div>
+                <div class="rectangle" id="no-mobile">
+                    <img src="image/icons.png" class="icons">
+                </div>
+            </div>
+            <img src="image/photo.png" class="image">
+        </div>
+    </body>
+</html>
